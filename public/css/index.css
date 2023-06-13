@@ -111,21 +111,19 @@ footer > .user {
 } */
 
 /* {{!-- =========== Lesson 2 ============== --}} */
+/* 
 
-.card {
-  background: #ededed;
-}
 
 .item {
   color: green;
-}
+} */
 
 /* Селектор першої дитини — це селектор, який вибирає перший
 тег, якщо він є першою дитиною всередині батьківського тегу */
 
-.item:first-child {
+/* .item:first-child {
   color: blue;
-}
+} */
 
 /* Селектор останньої дитини — це селектор, який вибирає останній
 тег, якщо він є останньою дитиною всередині батьківського тегу 
@@ -153,9 +151,9 @@ footer > .user {
 Для цього треба вказати індекс ( ) серед його братів і сестер. 
 :nth-child( ) n */
 
-.item:nth-child(2) {
+/* .item:nth-child(2) {
   color: darkmagenta;
-}
+} */
 
 /* Що можна вписувати в index ( ) n
 
@@ -183,10 +181,10 @@ footer > .user {
 Для цього треба вказати індекс ( ) серед його братів і сестер,
 які мають спільний тип тегу
 :nth-of-type( ) n */
-
+/* 
 .item:nth-of-type(3n) {
   color: red;
-}
+} */
 
 /* Селектор невідповідності — це селектор, який обирає
 елементи, які не відповідають вказаним селекторам
@@ -198,3 +196,35 @@ footer > .user {
 /* Селектор пустого контенту — це селектор, який обирає
 елементи, які не мають всередині контенту чи тегів
 :empty */
+
+.card-dark {
+  background: #e1e1e1;
+}
+
+.input-dark {
+  background: rgb(153, 151, 151);
+}
+
+.input-dark[required] {
+  background: rgb(138, 27, 27);
+}
+
+.input-dark[type='number'] {
+  background: rgb(78, 214, 4);
+}
+
+.small-img[alt~='small'] {
+  height: 500px;
+}
+
+button[class|='btn'] {
+  background: rgb(98, 10, 193);
+}
+
+a[class*='btn'] {
+  background: red;
+}
+
+.big-text::first-line {
+  color: red;
+}
